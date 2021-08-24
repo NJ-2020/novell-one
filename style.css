@@ -24,7 +24,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: yellowgreen;
   width: 100%;
   position: fixed;
   padding: 10px 10% 10px 10%;
@@ -51,4 +51,19 @@ nav ul li a {
   nav ul {
     display: none;
   }
+}
+
+.menu-toggle {
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  opacity: 0.8;
+  top: 3px;
+  width: 20px;
+  height: 18px;
+  left: -1px;
+  z-index: 2;
+
 }
