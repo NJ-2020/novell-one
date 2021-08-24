@@ -65,21 +65,4 @@ nav ul li a {
   height: 18px;
   left: -1px;
   z-index: 2;
-
-}
-
-.menu-toggle .burger{
-  visibility: visible;
-}
-
-.menu-toggle .cross{
-  visibility: hidden;
-}
-
-.menu-toggle input:checked .burger{
-  visibility: hidden;
-}
-
-.menu-toggle input:checked .cross{
-  visibility: visible;
 }

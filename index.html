@@ -2,139 +2,181 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>My Portfolio One Software Developer Portfolio</title> -->
-    <title>Software Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div>
-        <div>
-            <header>
-                <nav>
-                    <div class="logo">
-                        <a href="index.html">My Logo</a>
-                    </div>
-                    <ul>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+  <div class="blur-section">
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <a href="index.html">My Logo</a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
 
-                    <div class="menu-toggle">
-                        <input type="checkbox">
-                        <img class="burger" src="images/menu-button.svg" alt="menu-button">
-                        <img class="cross" src="images/cross.svg" alt="cross">
-                    </div>
-                </nav>
-            </header>
-        </div>
-
-        <main>
-            <section>
-                <div>
-                    <h1>
-                        I’m Novell Asad<br>
-                        Glad to see you!
-                    </h1>
-                    <p>
-                        I’m a software developer! I can help you build a product , feature or website Look through some
-                        of my work and experience! If you like what you see and have a project you need coded, don’t
-                        hestiate to contact me.
-                    </p>
-                </div>
-                <div>
-                    <h3>
-                        LET'S CONNECT
-                    </h3>
-                    <ul>
-                        <li><a href="#"><img src="images/angellist.svg" alt=""></a></li>
-                        <li><a href="#"><img src="images/github.svg" alt=""></a></li>
-                        <li><a href="#"><img src="images/Linkedin.svg" alt=""></a></li>
-                        <li><a href="#"><img src="images/medium.svg" alt=""></a></li>
-                        <li><a href="#"><img src="images/twitter.svg" alt=""></a></li>
-                    </ul>
-                </div>
-            </section>
-
-            <section>
-                <!-- <h2>Works Section</h2> -->
-            </section>
-
-            <section>
-                <div>
-                    <h2>About <br>
-                        Myself</h2>
-                    <p>Hello I’m a software developer! I can help you build a product , feature or website Look through
-                        some of my work and experience! If you like what you see and have a project you need coded,
-                        don’t hestiate to contact me.</p>
-                    <div>
-                        <h3>LET'S CONNECT</h3>
-                        <ul>
-                            <li><a href="#"><img src="images/angellist.svg" alt=""></a></li>
-                            <li><a href="#"><img src="images/github.svg" alt=""></a></li>
-                            <li><a href="#"><img src="images/Linkedin.svg" alt=""></a></li>
-                            <li><a href="#"><img src="images/medium.svg" alt=""></a></li>
-                            <li><a href="#"><img src="images/twitter.svg" alt=""></a></li>
-                        </ul>
-                    </div>
-                    <a href="#">Get My Resume</a>
-                </div>
-                <div>
-                    <a href="#">
-                        <h6>Languages</h6><img src="images/down_arrow_img.svg" alt="">
-                    </a>
-                    <ul>
-                        <li>
-                            <img src="images/js.svg" alt="">
-                            <span>Javascript</span>
-                        </li>
-                        <li>
-                            <img src="images/html.svg" alt="">
-                            <span>HTML</span>
-                        </li>
-                        <li>
-                            <img src="images/css.svg" alt="">
-                            <span>Css</span>
-                        </li>
-                    </ul>
-                    <a href="#">
-                        <h6>Frameworks</h6>
-                        <img src="images/right_arrow_img.svg" alt="">
-                    </a>
-                    <hr>
-                    <a href="#">
-                        <h6>Skills</h6>
-                        <img src="images/right_arrow_img.svg" alt="">
-                    </a>
-                    <hr>
-                </div>
-            </section>
-
-            <footer>
-                <section>
-                    <h2>Contact Me</h2>
-                    <p>If you have an application you are interested in developing, a feature that you need built or a
-                        project that needs coding. I’d love to help with it </p>
-                    <form action="#" method="POST">
-                        <input type="text" name="name" placeholder="Type your name here..." required autocomplete="off"
-                            maxlength="30" value="">
-                        <input type="email" name="email" placeholder="Type your email here..." required
-                            autocomplete="off" maxlength="30" value="">
-                        <textarea name="message" rows="8" placeholder="Write your message here..." required></textarea>
-                        <small></small>
-                        <div>
-                            <button type="submit">Get It Touch</button>
-                            <button type="reset">Reset</button>
-                        </div>
-                    </form>
-                </section>
-            </footer>
-        </main>
+          <div class="menu_toggle">
+            <input type="checkbox">
+            <img src="images/menu-button.svg" class="img-open" alt="menu-button">
+            <img src="images/cross.svg" class="img-close" alt="cross">
+          </div>
+        </nav>
+      </header>
     </div>
+
+    <main class="main">
+      <section class="banner">
+        <div class="banner-text">
+          <h1 class="header-2">
+            I’m Novell Asad<br>
+            Glad to see you!
+          </h1>
+          <p class="text drop-shadow">
+            I’m a software developer! I can help you build a product , feature or website Look through some
+            of my work and experience! If you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+        </div>
+        <div class="social-connect">
+          <h3>LET'S CONNECT</h3>
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <img src="images/angellist.svg" alt="img">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/github.svg" alt="img">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/Linkedin.svg" alt="img">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/medium.svg" alt="img">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/twitter.svg" alt="img">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="portfolio" class="work">
+        <h2 class="hidden">Works Section</h2>
+      </section>
+
+      <section class="about-container" id="about">
+        <div class="about">
+          <h2>About <br>
+            Myself</h2>
+          <p class="text">Hello I’m a software developer! I can help you build a product , feature or website Look
+            through
+            some of my work and experience! If you like what you see and have a project you need coded,
+            don’t hestiate to contact me.</p>
+          <div class="social-connect">
+            <h3>LET'S CONNECT</h3>
+            <ul class="social-links">
+              <li>
+                <a href="#">
+                  <img src="images/angellist.svg" alt="img">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/github.svg" alt="img">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/Linkedin.svg" alt="img">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/medium.svg" alt="img">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/twitter.svg" alt="img">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="button">Get My Resume</a>
+        </div>
+        <div class="skill-list">
+          <a href="#" class="language">
+            <h6>Languages</h6><img src="images/down_arrow_img.svg" alt="img">
+          </a>
+          <ul class="skill-card">
+            <li class="skill-card-list">
+              <img src="images/js.svg" alt="img">
+              <span>Javascript</span>
+            </li>
+            <li class="skill-card-list">
+              <img src="images/html.svg" alt="img">
+              <span>HTML</span>
+            </li>
+            <li class="skill-card-list">
+              <img src="images/css.svg" alt="img">
+              <span>Css</span>
+            </li>
+          </ul>
+          <a href="#" class="language">
+            <h6>Frameworks</h6>
+            <img src="images/right_arrow_img.svg" alt="img">
+          </a>
+          <hr class="hr">
+          <a href="#" class="language">
+            <h6>Skills</h6>
+            <img src="images/right_arrow_img.svg" alt="img">
+          </a>
+          <hr class="hr">
+        </div>
+      </section>
+
+      <footer class="footer-contact">
+        <section class="contact-me" id="contact">
+          <h2>Contact Me</h2>
+          <p class="text">If you have an application you are interested in developing, a feature that you need built or
+            a
+            project that needs coding. I’d love to help with it </p>
+          <form action="#" method="POST">
+            <input type="text" name="name" class="form-control" placeholder="Type your name here..." required
+              autocomplete="off" maxlength="30" value="">
+            <input type="email" name="email" class="form-control" placeholder="Type your email here..." required
+              autocomplete="off" maxlength="30" value="">
+            <textarea name="message" rows="8" class="text-area" placeholder="Write your message here..."
+              required></textarea>
+            <small class="helper-text"></small>
+            <div class="actions-button">
+              <button type="submit">Get It Touch</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </section>
+      </footer>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
