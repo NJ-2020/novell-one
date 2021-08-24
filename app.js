@@ -25,3 +25,29 @@ menuLink.forEach((link) => link.addEventListener("click", () => {
   imgClose.classList.toggle('active');
   imgOpen.classList.toggle('active');
 }));
+
+window.addEventListener("scroll", () => {
+  const windowPosition = window.scrollY > 0;
+  navbar.classList.toggle("scroll-active", windowPosition);
+});
+
+const navLi = document.querySelectorAll("nav ul li a");
+const section = document.querySelectorAll("section");
+window.addEventListener("scroll", () => {
+  let current = '';
+  section.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset > sectionTop - sectionHeight / 5 && window.scrollY > 450) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove('active');
+    if (li.classList.contains(current)) {
+      li.classList.add('active');
+    }
+  })
+})
+
