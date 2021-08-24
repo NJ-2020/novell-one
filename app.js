@@ -16,3 +16,12 @@ menuToggle.addEventListener("click", () => {
   imgClose.classList.toggle('active');
   imgOpen.classList.toggle('active');
 })
+
+menuLink.forEach((link) => link.addEventListener("click", () => {
+  navul.classList.remove('active');
+  document.querySelector('.menu_toggle input').checked = false;
+  body.classList.remove("stop-scrolling");
+  main.classList.remove("blur");
+  imgClose.classList.toggle('active');
+  imgOpen.classList.toggle('active');
+}));
