@@ -9,6 +9,7 @@ const imgClose = document.querySelector('.img-close');
 const imgOpen = document.querySelector('.img-open');
 
 menuToggle.addEventListener('click', () => {
+  // is this higher order function.  Means on click run the following functions
   navul.classList.toggle('active');
   menuToggle.classList.toggle('active');
   body.classList.toggle('stop-scrolling');
