@@ -111,6 +111,10 @@ nav ul li .a.active {
     z-index: 200;
   }
 
+  body.stop-scrolling {
+    overflow: hidden;
+  }
+
   nav ul {
     position: absolute;
     width: 100%;
