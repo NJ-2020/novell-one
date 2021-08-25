@@ -7,8 +7,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-header {
-  top: 0;
+body {
+  overflow: auto;
+  background-color: rgb(240, 240, 240);
 }
 
 a {
@@ -19,50 +20,107 @@ ul {
   list-style: none;
 }
 
-nav {
+header {
   top: 0;
+  z-index: 100;
+}
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: yellowgreen;
+  background-color: white;
+  padding: 10px 10% 10px 10%;
   width: 100%;
   position: fixed;
-  padding: 10px 10% 10px 10%;
+  top: 0;
+  z-index: 100;
+  transition: all 0.5s;
 }
 
-nav .logo a {
-  font-weight: bold;
+nav.scroll-active {
+  filter: drop-shadow(0 1rem 1rem rgba(9, 255, 0, 0.24));
+}
+
+.logo a {
   color: #6070FF;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 nav ul {
   display: flex;
-  gap: 25px;
+  gap: 35px;
 }
 
-nav ul li a {
+nav ul li .a {
   color: #344563;
+  display: inline-block;
   font-weight: 500;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 24px;
 }
 
-@media (max-width: 992px) {
-  nav ul {
-    display: none;
-  }
-}
-
-.menu-toggle {
+.menu_toggle {
+  display: none;
+  flex-direction: column;
+  height: 13px;
+  justify-content: space-between;
   position: relative;
 }
 
-.menu-toggle input {
+.menu_toggle input {
   position: absolute;
-  opacity: 0.8;
-  top: 3px;
   width: 20px;
   height: 18px;
   left: -1px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
   z-index: 2;
+}
+
+.img-close {
+  display: none;
+}
+
+.img-close.active {
+  display: block;
+}
+
+.img-open {
+  display: block;
+}
+
+.img-open.active {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 10px 20px 10px 20px;
+  }
+
+  .menu_toggle {
+    display: flex;
+    transition: all 0.5s;
+    z-index: 200;
+  }
+
+  nav ul {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    transform: translateX(100%);
+    overflow: auto;
+    padding-top: 6rem;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    transition: all 0.5s;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+  }
 }

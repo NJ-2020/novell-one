@@ -1,13 +1,13 @@
 const menuToggle = document.querySelector('.menu_toggle');
 const navul = document.querySelector('nav ul');
 const body = document.querySelector('body');
-const menuLink = document.querySelector('nav ul li a');
+const menuLink = document.querySelectorAll('nav ul li a');
 const main = document.querySelector('.main');
 const navbar = document.querySelector('nav');
 const imgClose = document.querySelector('.img-close');
 const imgOpen = document.querySelector('.img-open');
 
-menuToggle.addEventListener("click", () => {
+menuToggle.addEventListener('click', () => {
   navul.classList.toggle('active');
   menuToggle.classList.toggle('active');
   body.classList.toggle('stop-scrolling');
@@ -17,23 +17,23 @@ menuToggle.addEventListener("click", () => {
   imgOpen.classList.toggle('active');
 })
 
-menuLink.forEach((link) => link.addEventListener("click", () => {
+menuLink.forEach((link) => link.addEventListener('click', () => {
   navul.classList.remove('active');
   document.querySelector('.menu_toggle input').checked = false;
-  body.classList.remove("stop-scrolling");
-  main.classList.remove("blur");
+  body.classList.remove('stop-scrolling');
+  main.classList.remove('blur');
   imgClose.classList.toggle('active');
   imgOpen.classList.toggle('active');
 }));
 
-window.addEventListener("scroll", () => {
+window.addEventListener('scroll', () => {
   const windowPosition = window.scrollY > 0;
-  navbar.classList.toggle("scroll-active", windowPosition);
+  navbar.classList.toggle('scroll-active', windowPosition);
 });
 
-const navLi = document.querySelectorAll("nav ul li a");
-const section = document.querySelectorAll("section");
-window.addEventListener("scroll", () => {
+const navLi = document.querySelectorAll('nav ul li a');
+const section = document.querySelectorAll('section');
+window.addEventListener('scroll', () => {
   let current = '';
   section.forEach((section) => {
     const sectionTop = section.offsetTop;
