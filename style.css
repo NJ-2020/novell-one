@@ -39,7 +39,7 @@ nav {
 }
 
 nav.scroll-active {
-  filter: drop-shadow(0 1rem 1rem rgba(9, 255, 0, 0.24));
+  filter: drop-shadow(0 1rem 1rem rgba(64, 83, 252, 0.24));
 }
 
 .logo a {
@@ -96,6 +96,10 @@ nav ul li .a {
   display: none;
 }
 
+nav ul li .a.active {
+  color: #6070FF;
+}
+
 @media screen and (max-width: 992px) {
   nav {
     padding: 10px 20px 10px 20px;
@@ -122,5 +126,31 @@ nav ul li .a {
     transition: all 0.5s;
     z-index: 100;
     backdrop-filter: blur(5px);
+    background-color: #1b31f0a2;
+  }
+
+  nav ul.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  nav ul li .a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    transition: .4s;
+    background-color: transparent;
+    color: white !important;
+  }
+
+  nav ul li .a:hover {
+    color: white !important;
+  }
+
+  nav ul li .a.active {
+    color: white !important;
+  }
+
+  main.blur {
+    filter: blur(5px);
   }
 }
