@@ -166,3 +166,19 @@ nav ul li .a.active {
 
 /* banner
 ............................ */
+.banner {
+  background-image: url("images/header-shapes\%20mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30vh 4vw;
+  margin: 0;
+}
+
+.banner h1.header-2 {
+  font-family: "poppins";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 52px;
+  margin: 12px 0px;
+}
