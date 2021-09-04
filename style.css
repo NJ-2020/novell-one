@@ -52,7 +52,7 @@ nav.scroll-active {
 
 nav ul {
   display: flex;
-  gap: 35px;
+  gap: 45px;
 }
 
 nav ul li .a {
@@ -102,6 +102,8 @@ nav ul li .a.active {
   color: #6070FF;
 }
 
+/* responsiveness of navbar - mobile version
+................................................ */
 @media screen and (max-width: 992px) {
   nav {
     padding: 10px 20px 10px 20px;

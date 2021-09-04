@@ -1,5 +1,5 @@
 const menuToggle = document.querySelector('.menu_toggle');
-// pilihilah di document (html) element yg memiliki class menu_toggle.  Tp yg dipilih yg pertama
+// pilihlah di document (html) element yg memiliki class menu_toggle.  Tp yg dipilih yg pertama
 const navul = document.querySelector('nav ul');
 const body = document.querySelector('body');
 const menuLink = document.querySelectorAll('nav ul li a');
